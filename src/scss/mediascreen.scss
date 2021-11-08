@@ -13,11 +13,9 @@
                 }
             }
         }
-
         .main__heading{
             font-size: 50px;
         }
-
         .main__article{
             .article__heading{
                 font-size: 50px;
@@ -26,14 +24,59 @@
                 font-size: 25px;
             }
         }
-
         .block__hero{
             .block__hero__heding{
                 font-size: 35px;
                 margin: 0 80px;
+                line-height: 40px;
             }
         }
-        
+        .block__ppc{
+            .header__ppc{
+                font-size: 40px;
+            }
+            .ppc__text{
+                font-size: 20px;              
+            }
+        }      
+}
+
+@media (max-width: 431px){
+    .main__heading{
+        font-size: 40px;
+    }
+    .main__article{
+        .article__heading{
+            font-size: 35px;
+        }
+        .article__text{
+            font-size: 16px;
+        }
+    }
+    .block__hero{
+        .block__hero__heding{
+            font-size: 30px;
+        }
+    }
+    .block__ppc{
+        .header__ppc{
+            font-size: 25px;
+        }
+        .text_with_logo{
+            .logo_ppc{
+                max-width: 100px;
+                max-height: 100px;
+            }
+            .ppc__text{
+                font-size: 16px;
+                margin-left: 20px;   
+            }
+        }
+        .ppc__text{
+            font-size: 16px;
+            margin-left: 55px;   
+        }
+    }  
 }
 
 @media (max-width:340px) {

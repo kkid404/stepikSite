@@ -40,18 +40,20 @@ h2, h1{
         }
     }  
 }
-.background_styles{
 
-}
 
 .main__heading{
     background-image: url(../img/heading_background.png);
+    background-size: cover;
     min-height: 403px;
-    color: white;
-    font-size: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    h1{
+        color: white;
+        font-size: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 .main__article{
@@ -72,19 +74,48 @@ h2, h1{
 
 .block__hero{
     background-image: url(../img/hero_backround.png);
+    background-size: cover;
     min-height: 483px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     .block__hero__heding{
+        margin: 0 20%;
         font-family: $fonts_hero;
         color: white;
-        font-size: 48px;
-        margin: 20px 164px;
+        font-size: 40px;
         line-height: 60px;
-        text-align: center;
     }
 
+}
+
+.block__ppc{
+    padding-bottom: 92px;
+    .header__ppc{
+        font-size: 64px;
+        text-align: center;
+        padding: 48px 15px 0;
+    }
+    .text_with_logo{
+        display: flex;
+        .logo_ppc{
+            margin-left: 55px;
+            margin-top: 28px;
+            height: auto;
+            width: 100%;
+            max-width: 115px;
+            max-height: 115px;
+        }
+    }
+    .ppc__text{
+        font-size: 32px;
+        font-family: $fonts_text;
+        margin-top: 20px;
+        margin-right: 55px;
+        margin-left: 55px;
+        
+    }
 }
 
 @import "mediascreen"
