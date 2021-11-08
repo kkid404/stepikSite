@@ -1,0 +1,38 @@
+@import "fonts";
+@import "null";
+
+$main_color: #007765;
+$heading_fonts: "Roboto Medium";
+$about_team: "Roboto Italic";
+$name_team: "Roboto Bold";
+$fonts_text: "Roboto Regular";
+
+.header{
+    background-color: $main_color;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 20px 19px;
+    align-items: center;
+    .main__logo{
+        width: 100%;
+        height: auto;
+    }
+    .header__nav{
+        display: flex;      
+        .link__nav{
+            color: white;
+            font-size: 24px;
+            font-family: $heading_fonts;            
+        }
+        .link__nav:hover{
+            color: #ffffff79;
+        }
+        .link__nav:not(:first-child)::before{
+            content: "|";
+            margin: 0 5px;
+        }
+    }  
+}
+
+@import "mediascreen"
