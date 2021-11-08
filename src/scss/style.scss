@@ -6,6 +6,7 @@ $heading_fonts: "Roboto Medium";
 $about_team: "Roboto Italic";
 $name_team: "Roboto Bold";
 $fonts_text: "Roboto Regular";
+$fonts_hero: "Roboto Medium Italic";
 
 h2, h1{
     font-family: $heading_fonts;
@@ -39,11 +40,12 @@ h2, h1{
         }
     }  
 }
+.background_styles{
+
+}
 
 .main__heading{
     background-image: url(../img/heading_background.png);
-    width: 100%;
-    height: auto;
     min-height: 403px;
     color: white;
     font-size: 72px;
@@ -66,6 +68,23 @@ h2, h1{
         font-family: $fonts_text;     
         padding: 0 55px 53px;
     }
+}
+
+.block__hero{
+    background-image: url(../img/hero_backround.png);
+    min-height: 483px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .block__hero__heding{
+        font-family: $fonts_hero;
+        color: white;
+        font-size: 48px;
+        margin: 20px 164px;
+        line-height: 60px;
+        text-align: center;
+    }
+
 }
 
 @import "mediascreen"
