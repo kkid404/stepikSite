@@ -7,6 +7,10 @@ $about_team: "Roboto Italic";
 $name_team: "Roboto Bold";
 $fonts_text: "Roboto Regular";
 
+h2, h1{
+    font-family: $heading_fonts;
+}
+
 .header{
     background-color: $main_color;
     display: flex;
@@ -33,6 +37,18 @@ $fonts_text: "Roboto Regular";
             margin: 0 5px;
         }
     }  
+}
+
+.main__heading{
+    background-image: url(../img/heading_background.png);
+    width: 100%;
+    height: auto;
+    min-height: 403px;
+    color: white;
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @import "mediascreen"
