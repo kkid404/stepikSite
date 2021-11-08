@@ -9,6 +9,7 @@ $fonts_text: "Roboto Regular";
 
 h2, h1{
     font-family: $heading_fonts;
+    color:  #007765;
 }
 
 .header{
@@ -49,6 +50,22 @@ h2, h1{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main__article{
+    background-color: #EEEEEE;
+    padding-bottom: 80px;
+    .article__heading{
+        padding-top: 48px;
+        font-size: 64px;
+        text-align: center;
+        padding-bottom: 33px;
+    }
+    .article__text{
+        font-size: 32px;
+        font-family: $fonts_text;     
+        padding: 0 55px 53px;
+    }
 }
 
 @import "mediascreen"
