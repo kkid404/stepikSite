@@ -11,6 +11,7 @@ $fonts_hero: "Roboto Medium Italic";
 h2, h1{
     font-family: $heading_fonts;
     color:  #007765;
+    box-sizing: border-box;
 }
 
 .header{
@@ -73,7 +74,7 @@ h2, h1{
 }
 
 .block__hero{
-    background-image: url(../img/hero_backround.png);
+    background: url(../img/hero_backround.png);
     background-size: cover;
     min-height: 483px;
     display: flex;
@@ -102,8 +103,6 @@ h2, h1{
         .logo_ppc{
             margin-left: 55px;
             margin-top: 28px;
-            height: auto;
-            width: 100%;
             max-width: 115px;
             max-height: 115px;
         }
@@ -117,5 +116,40 @@ h2, h1{
         
     }
 }
+.team__block{
+    background: #EEEEEE;
+    text-align: center;
+    .header__team{
+        text-align: center;
+        font-size: 64px;
+        padding-top: 100px;
+    }
+    .block_card{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 68px 55px 94px;
+        justify-content: center;
+        .card{
+            padding: 24px 91px 91px;
+            .card__imd{
+                width: 100%;
+                height: auto;
+            }
+            .name__team{
+                color: $main_color;
+                font-family: $name_team;
+                margin-top: 12px;
+                font-size: 24px;
+            }
+            .about__team{
+                font-family: $about_team;
+                font-size: 18px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+}
+
 
 @import "mediascreen"
