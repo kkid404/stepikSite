@@ -1,0 +1,376 @@
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(/Roboto-Medium.90b91959.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Italic";
+  src: url(/Roboto-Italic.ed1330f7.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(/Roboto-Bold.75735ec6.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(/Roboto-Regular.fc77e1af.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Medium Italic";
+  src: url(/Roboto-MediumItalic.c0e46ead.ttf);
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h2, h1 {
+  font-family: "Roboto Medium";
+  color: #007765;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #007765;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 20px 19px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+.header .main__logo {
+  width: 100%;
+  height: auto;
+}
+.header .header__nav {
+  display: flex;
+}
+.header .header__nav .link__nav {
+  color: white;
+  font-size: 24px;
+  font-family: "Roboto Medium";
+}
+.header .header__nav .link__nav:hover {
+  color: #ffffff79;
+}
+.header .header__nav .link__nav:not(:first-child)::before {
+  content: "|";
+  margin: 0 5px;
+}
+
+.main__heading {
+  padding-top: 80px;
+  background-image: url(/heading_background.bf4bfbdc.png);
+  background-size: cover;
+  min-height: 403px;
+}
+.main__heading h1 {
+  color: white;
+  font-size: 72px;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.main__article {
+  background-color: #EEEEEE;
+  padding-bottom: 80px;
+}
+.main__article .article__heading {
+  padding-top: 48px;
+  font-size: 64px;
+  text-align: center;
+  padding-bottom: 33px;
+}
+.main__article .article__text {
+  font-size: 32px;
+  font-family: "Roboto Regular";
+  padding: 0 55px 53px;
+}
+
+.block__hero {
+  background: url(/hero_backround.99705bac.png);
+  background-size: cover;
+  min-height: 483px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.block__hero .block__hero__heding {
+  margin: 0 20%;
+  font-family: "Roboto Medium Italic";
+  color: white;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.block__ppc {
+  padding-bottom: 92px;
+}
+.block__ppc .header__ppc {
+  font-size: 64px;
+  text-align: center;
+  padding: 48px 15px 0;
+}
+.block__ppc .text_with_logo {
+  display: flex;
+}
+.block__ppc .text_with_logo .logo_ppc {
+  margin-left: 55px;
+  margin-top: 28px;
+  max-width: 115px;
+  max-height: 115px;
+}
+.block__ppc .ppc__text {
+  font-size: 32px;
+  font-family: "Roboto Regular";
+  margin-top: 20px;
+  margin-right: 55px;
+  margin-left: 55px;
+}
+
+.team__block {
+  background: #EEEEEE;
+  text-align: center;
+}
+.team__block .header__team {
+  text-align: center;
+  font-size: 64px;
+  padding-top: 100px;
+}
+.team__block .block_card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 68px 55px 0;
+  justify-content: center;
+}
+.team__block .block_card .card {
+  padding: 24px 91px 91px;
+}
+.team__block .block_card .card .card__imd {
+  width: 100%;
+  height: auto;
+}
+.team__block .block_card .card .name__team {
+  color: #007765;
+  font-family: "Roboto Bold";
+  margin-top: 12px;
+  font-size: 24px;
+}
+.team__block .block_card .card .about__team {
+  font-family: "Roboto Italic";
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+  color: white;
+  padding: 48px 0 64px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@media (max-width: 644px) {
+  .header {
+    position: static;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header .header__nav {
+    flex-direction: column;
+  }
+  .header .header__nav .link__nav {
+    margin-top: 20px;
+  }
+  .header .header__nav .link__nav::before {
+    content: "|";
+    margin: 0 5px;
+  }
+
+  .main__heading {
+    padding-top: 0;
+  }
+  .main__heading h1 {
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .main__article .article__heading {
+    font-size: 50px;
+  }
+  .main__article .article__text {
+    font-size: 25px;
+  }
+
+  .block__hero .block__hero__heding {
+    font-size: 35px;
+    margin: 0 80px;
+    line-height: 40px;
+  }
+
+  .block__ppc .header__ppc {
+    font-size: 50px;
+  }
+  .block__ppc .ppc__text {
+    font-size: 20px;
+  }
+
+  .team__block .header__team {
+    font-size: 50px;
+    padding-top: 60px;
+  }
+  .team__block .block_card {
+    margin: 50px 55px 0;
+  }
+  .team__block .block_card .card {
+    padding: 24px 91px 61px;
+  }
+}
+@media (max-width: 480px) {
+  .main__heading h1 {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__article .article__heading {
+    font-size: 40px;
+  }
+  .main__article .article__text {
+    font-size: 16px;
+  }
+
+  .block__hero .block__hero__heding {
+    font-size: 40px;
+  }
+
+  .block__ppc .header__ppc {
+    font-size: 25px;
+  }
+  .block__ppc .text_with_logo .logo_ppc {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .block__ppc .text_with_logo .ppc__text {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  .block__ppc .ppc__text {
+    font-size: 16px;
+    margin-left: 55px;
+  }
+
+  .team__block .header__team {
+    font-size: 40px;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .main__heading h1 {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__article .article__heading {
+    font-size: 40px;
+  }
+  .main__article .article__text {
+    font-size: 20px;
+  }
+
+  .block__hero .block__hero__heding {
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=/js.fcffc47e.css.map */
