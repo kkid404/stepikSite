@@ -8,6 +8,7 @@ $name_team: "Roboto Bold";
 $fonts_text: "Roboto Regular";
 $fonts_hero: "Roboto Medium Italic";
 
+
 h2, h1{
     font-family: $heading_fonts;
     color:  #007765;
@@ -21,6 +22,8 @@ h2, h1{
     flex-wrap: wrap;
     padding: 20px 20px 19px;
     align-items: center;
+    position: fixed;
+    width: 100%;
     .main__logo{
         width: 100%;
         height: auto;
@@ -44,6 +47,7 @@ h2, h1{
 
 
 .main__heading{
+    padding-top: 80px;
     background-image: url(../img/heading_background.png);
     background-size: cover;
     min-height: 403px;
@@ -52,7 +56,7 @@ h2, h1{
         font-size: 72px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        padding-top: 150px;
     }
 
 }
@@ -127,7 +131,7 @@ h2, h1{
     .block_card{
         display: flex;
         flex-wrap: wrap;
-        margin: 68px 55px 94px;
+        margin: 68px 55px 0;
         justify-content: center;
         .card{
             padding: 24px 91px 91px;
@@ -148,7 +152,19 @@ h2, h1{
             }
         }
     }
+}
 
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background:#333333;
+    color: white;
+    padding: 48px 0 64px;
+    font-family: $fonts_text;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 

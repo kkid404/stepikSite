@@ -1,5 +1,6 @@
 @media (max-width: 644px) {
     .header{
+        position: static;
         justify-content: center;
         flex-direction: column;
         .header__nav{
@@ -15,13 +16,16 @@
         }
 
         .main__heading{
+            padding-top: 0;
             h1{
                 color: white;
                 font-size: 60px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding-top: 0;
             }
+
         }
         .main__article{
             .article__heading{
@@ -55,7 +59,7 @@
                 padding-top: 60px;
             }
             .block_card{
-                margin: 50px 55px 94px;
+                margin: 50px 55px 0;
                 .card{
                     padding: 24px 91px 61px;
                 }
